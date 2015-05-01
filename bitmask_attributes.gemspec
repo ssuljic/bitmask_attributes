@@ -16,4 +16,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'activerecord', '>= 3.1'
   gem.add_development_dependency "appraisal",     "~> 0.5.1"
+  gem.add_development_dependency "test-unit"
 end
