@@ -1,5 +1,7 @@
 == BitmaskAttributes
 
+=== UNMAINTAINED! This repo is no longer maintained. I recommend you use Rails built in `enum`.
+
 Transparent manipulation of bitmask attributes for ActiveRecord, based on
 the bitmask-attribute gem, which has been dormant since 2009. This updated
 gem work with Rails 3 and up (including Rails 3.1).
