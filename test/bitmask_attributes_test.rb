@@ -86,7 +86,7 @@ class BitmaskAttributesTest < ActiveSupport::TestCase
         assert_unsupported { campaign.medium = [:so_will_this] }
       end
 
-      should "can only use Fixnum values for raw bitmask values" do
+      should "can only use Integer values for raw bitmask values" do
         campaign = @campaign_class.new(:medium => :web)
         assert_unsupported { campaign.medium_bitmask = :this_will_fail }
       end
@@ -115,7 +115,7 @@ class BitmaskAttributesTest < ActiveSupport::TestCase
         assert_equal([:web, :print], @campaign_class.medium_for_bitmask(3))
       end
 
-      should "assert use of non Fixnum value in inverse convenience method will result in exception" do
+      should "assert use of non Integer value in inverse convenience method will result in exception" do
         assert_unsupported { @campaign_class.medium_for_bitmask(:this_isnt_valid)  }
       end
 
